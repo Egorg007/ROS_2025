@@ -10,6 +10,10 @@ project(super_kamnev_study_pkg)
 find_package(catkin REQUIRED COMPONENTS
   rospy
   std_msgs
+ roscpp
+ rospy
+ tf
+ turtlesim
 )
 
 ## System dependencies are found with CMake's conventions
