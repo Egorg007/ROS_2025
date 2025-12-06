@@ -1,0 +1,9 @@
+<launch>
+
+  <node name="polynominal" pkg="super_kamnev_study_pkg" type="polynominal.py" output="screen">
+  </node>
+
+  <node name="summing" pkg="super_kamnev_study_pkg" type="summing.py" output="screen">
+  </node>
+</launch>
+

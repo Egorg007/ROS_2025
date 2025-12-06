@@ -1,0 +1,9 @@
+<launch>
+  <arg name="topic_name" default="new_topic" doc="Имя топика, переданное из my_first.launch"/>
+
+  <node name="listener_cpp" pkg="roscpp_tutorials" type="listener" output="screen">
+    <remap from="chatter" to="$(arg topic_name)"/>
+  </node>
+  
+</launch>
+

@@ -1,0 +1,8 @@
+<launch>
+    <arg name="a" default="1"/>
+    <arg name="b" default="2"/>
+    <arg name="c" default="3"/>
+    
+    <node name="request" pkg="super_kamnev_study_pkg" type="request.py" output="screen" args="$(arg a) $(arg b) $(arg c)"/>
+</launch>
+
