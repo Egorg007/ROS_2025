@@ -1,0 +1,6 @@
+<launch>
+	<node pkg="gmapping" type="slam_gmapping" name="gmapping">
+		<rosparam command="load" file="$(find super_kamnev_study_pkg)/yaml/gmapping_params.yaml" />
+	</node>
+</launch>
+

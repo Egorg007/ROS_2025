@@ -1,0 +1,15 @@
+<launch>
+	<arg name="gazebo_gui" default="true" doc="Показывать ли окно Gazebo" />
+	<include file="$(find super_kamnev_study_pkg)/launch/turtlebot3_world.launch">
+	
+		<arg name="x_pos" default="1.0"/>
+	    	<arg name="y_pos" default="1.0"/>
+	    	<arg name="z_pos" default="1.0"/>
+	    	<arg name="model" default="burger"/>
+	    	<arg name="gazebo_gui" default="$(arg gazebo_gui)"/>
+    	
+	</include>
+		
+	<include file="$(find super_kamnev_study_pkg)/launch/turtlebot3_slam.launch" />
+</launch>
+
